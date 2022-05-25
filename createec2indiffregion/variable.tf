@@ -1,4 +1,3 @@
-
 variable "region_east" {
  default = "us-east-1"
  description = "AWS Region"
