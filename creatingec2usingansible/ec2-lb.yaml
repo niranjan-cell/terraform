@@ -16,6 +16,7 @@
         group: "{{ SG }}"
         instance_type: t2.micro
         image: "{{ ami }}"
+        user_data: "{{ lookup('file', 'user_data_serverA.sh') }}"
         region: "{{ region }}"
         vpc_subnet_id: "{{ subnetA }}"
         assign_public_ip: yes
